@@ -11,8 +11,7 @@ import Plot
 extension Theme where Site == HimmelstraeumerinBlog {
     static var himmelstraeumerin: Self {
         Theme(
-            htmlFactory: HimmelstraeumerinHTMLFactory(),
-            resourcePaths: ["Resources/HimmelstraeumerinTheme/styles.css"]
+            htmlFactory: HimmelstraeumerinHTMLFactory()
         )
     }
 

@@ -218,7 +218,7 @@ article blockquote p {
 
 footer {
     padding: 20px;
-    color: #8a8a8a;
+    color: #757575;
     line-height: 1.2em;
 }
 
@@ -233,8 +233,7 @@ footer {
         background-color: #222;
     }
 
-    body,
-    header .site-name {
+    body {
         color: #ddd;
     }
 
@@ -244,6 +243,10 @@ footer {
 
     header {
         background-color: #000;
+    }
+
+    article blockquote {
+        color: #EDEDED;
     }
 }
 
