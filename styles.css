@@ -222,6 +222,12 @@ footer {
     line-height: 1.2em;
 }
 
+@media (min-width: 640px) {
+    header {
+        padding: 40px 0;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #222;
