@@ -251,8 +251,16 @@ footer {
         background-color: #000;
     }
 
+    article blockquote p {
+        color: #9a9898;
+    }
+
     article blockquote {
-        color: #EDEDED;
+        border-color: #9a9898;
+    }
+
+    article p.release-date {
+        color: #9a9898;
     }
 }
 
