@@ -155,6 +155,8 @@ article hr {
 
 article li {
     margin: 10px 0px 10px 10px;
+    font-size: 1.05em;
+    line-height: 1.5;
 }
 
 article ul {
