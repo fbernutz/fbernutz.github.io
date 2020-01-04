@@ -1,6 +1,6 @@
 ---
 date: 2019-12-30 22:10
-description: About my year
+description: "If you loved it, you should write a blog post on it." Following this motto, I decided to write down some thoughts about 2019.
 tags: post, recap-2019
 ---
 # Thoughts about 2019
@@ -212,4 +212,4 @@ Top 3 words in commit messages (ignoring words up to three letters)
 
 That's it! See you in 2020 and happy new year 🙂
 
-<p><img src="../../images/2020-fireworks.JPG" alt="Exploding fireworks through a half opened window" /></a></p>
+<p><img src="../../images/2020-fireworks.JPG" alt="Exploding fireworks through a half opened window" /></p>
