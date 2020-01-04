@@ -8,8 +8,8 @@ let package = Package(
         .executable(name: "HimmelstraeumerinBlog", targets: ["HimmelstraeumerinBlog"])
     ],
     dependencies: [
-        .package(url: "https://github.com/johnsundell/publish.git", .branch("master")),
-        .package(url: "https://github.com/johnsundell/splashpublishplugin", .branch("master"))
+        .package(url: "https://github.com/johnsundell/publish.git", from: "0.2.0"),
+        .package(url: "https://github.com/johnsundell/splashpublishplugin", from: "0.1.0")
     ],
     targets: [
         .target(
