@@ -180,6 +180,18 @@ article blockquote p {
     margin-bottom: 0;
 }
 
+article figure {
+  position: relative;
+  padding: 10px;
+}
+
+article figcaption {
+  margin: 10px 0;
+  text-align: center;
+  color: #757575;
+  font-size: 0.95em;
+}
+
 .tag-list {
     margin-bottom: 15px;
 }

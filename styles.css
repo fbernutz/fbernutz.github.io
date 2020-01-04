@@ -110,7 +110,7 @@ h2 {
 }
 
 h3 {
-    margin-top: 20px;
+    margin: 20px 0 10px 0;
 }
 
 p {
@@ -164,7 +164,7 @@ article ul {
 
 article img {
     margin: 1em 0;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
@@ -178,6 +178,18 @@ article blockquote {
 
 article blockquote p {
     margin-bottom: 0;
+}
+
+article figure {
+  position: relative;
+  padding: 10px;
+}
+
+article figcaption {
+  margin: 10px 0;
+  text-align: center;
+  color: #757575;
+  font-size: 0.95em;
 }
 
 .tag-list {
