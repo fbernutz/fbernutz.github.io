@@ -227,6 +227,13 @@ private extension Node where Context == HTML.BodyContext {
                     .href("https://www.instagram.com/diehimmelstraeumerin/"),
                     .target(.blank),
                     .rel(.nofollow)
+                ),
+                .text(" | "),
+                .a(
+                    .text("Flickr"),
+                    .href("https://www.flickr.com/photos/feli_93/"),
+                    .target(.blank),
+                    .rel(.nofollow)
                 )
             )
         )
