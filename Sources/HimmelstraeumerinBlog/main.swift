@@ -26,7 +26,7 @@ try HimmelstraeumerinBlog().publish(
         .installPlugin(.splash(withClassPrefix: "splash")),
         .addMarkdownFiles(),
         .copyResources(),
-        .generateHTML(withTheme: .himmelstraeumerin),
+        .generateHTML(withTheme: .himmelstraeumerin, indentation: .tabs(2)),
         .generateSiteMap()
     ]
 )
