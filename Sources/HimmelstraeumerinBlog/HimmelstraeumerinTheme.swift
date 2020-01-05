@@ -206,14 +206,20 @@ private extension Node where Context == HTML.BodyContext {
                     .text("Publish"),
                     .href("https://github.com/johnsundell/publish"),
                     .target(.blank)
-                )
+                ),
+                .text(". This site is "),
+                .a(
+                    .text("open source"),
+                    .href("https://github.com/fbernutz/fbernutz.github.io"),
+                    .target(.blank)
+                ),
+                .text(".")
             ),
             .p(
                 .a(
                     .text("Twitter"),
                     .href("https://twitter.com/felibe444"),
-                    .target(.blank),
-                    .rel(.nofollow)
+                    .target(.blank)
                 ),
                 .text(" | "),
                 .a(
@@ -232,8 +238,7 @@ private extension Node where Context == HTML.BodyContext {
                 .a(
                     .text("Flickr"),
                     .href("https://www.flickr.com/photos/feli_93/"),
-                    .target(.blank),
-                    .rel(.nofollow)
+                    .target(.blank)
                 )
             )
         )
