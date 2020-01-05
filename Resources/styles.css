@@ -25,7 +25,7 @@ body {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-    padding: 60px 40px 0 40px;
+    padding: 60px 40px 40px 40px;
     text-align: left;
 }
 
@@ -128,9 +128,13 @@ a {
 .item-list > li {
     display: block;
     padding: 20px;
-    margin: 10px 0px 10px 0px;
+    margin-bottom: 20px;
     border-radius: 20px;
     background-color: #eee;
+}
+
+.item-list > li:last-child {
+    margin-bottom: 0;
 }
 
 .item-list h1 {
@@ -238,6 +242,12 @@ footer {
     padding: 20px;
     color: #757575;
     line-height: 1.2em;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        padding: 40px 20px;
+    }
 }
 
 @media (min-width: 640px) {
