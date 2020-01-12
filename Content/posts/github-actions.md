@@ -151,7 +151,12 @@ Found in the [GitHub Community Forum](https://github.community/t5/GitHub-Actions
 
 ### Pin Xcode Version 
 
-It's also possible to pin the Xcode version. 
+It's also possible to pin the Xcode version. Add the following code above `jobs`.
+
+```
+env:
+  DEVELOPER_DIR: /Applications/Xcode_11.3.app/Contents/Developer
+```
 
 Found in the [GitHub Community Forum](https://github.community/t5/GitHub-Actions/Selecting-an-Xcode-version/m-p/32340#M1092)
 
