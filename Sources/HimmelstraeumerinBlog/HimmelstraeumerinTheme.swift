@@ -163,8 +163,6 @@ private extension Node where Context == HTML.BodyContext {
         for context: PublishingContext<T>,
         selectedSection: T.SectionID?
     ) -> Node {
-//        let sectionIDs = T.SectionID.allCases
-
         return .header(
             .wrapper(
                 .a(.class("site-name"), .href("/"), .text(context.site.name)),
