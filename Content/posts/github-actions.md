@@ -103,7 +103,7 @@ jobs:
       run: bundle exec fastlane snapshot_test
 ```
 
-Sadly there is nothing like a `install` phase (yet?), which I know from Travis or Gitlab CI. So, there is some duplicated code in here for installing the dependencies for each job. But there is a solution for it. You can create a `Install Dependency` job and the other jobs then wait for this to finish but I didn't try it out yet. I found this in the [GitHub Community Forum](https://github.community/t5/GitHub-Actions/the-same-dependency-in-all-workflows-jobs/td-p/37266) where I discovered some useful hints and tips. 
+Sadly there is nothing like a `install` phase (yet?), which I know from Travis or Gitlab CI. So, there is some duplicated code in here for installing the dependencies for each job. But there is a solution for it. You can create a "Install Dependency" job and the other jobs then wait for this to finish but I didn't try it out yet. I found this in the [GitHub Community Forum](https://github.community/t5/GitHub-Actions/the-same-dependency-in-all-workflows-jobs/td-p/37266) where I discovered some useful hints and tips. 
 
 #### 2. Delete `.travis.yml`
 
