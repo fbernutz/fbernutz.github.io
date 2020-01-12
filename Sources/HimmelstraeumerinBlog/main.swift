@@ -22,6 +22,15 @@ struct HimmelstraeumerinBlog: Website {
 }
 
 try HimmelstraeumerinBlog().publish(
+//    withTheme: .himmelstraeumerin,
+//    indentation: .tabs(2),
+//    additionalSteps: [
+//        .installPlugin(.splash(withClassPrefix: "splash")),
+//        .addMarkdownFiles(),
+//        .copyResources(),
+//        .generateSiteMap()
+//    ]
+//    shouldUseOutputFolder: false,
     using: [
         .installPlugin(.splash(withClassPrefix: "splash")),
         .addMarkdownFiles(),
