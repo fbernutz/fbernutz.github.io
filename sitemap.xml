@@ -883,6 +883,12 @@
 				<lastmod>2021-06-09</lastmod>
 		</url>
 		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwdc21-whats-new-foundation</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2021-06-09</lastmod>
+		</url>
+		<url>
 				<loc>https://fbernutz.github.io/sketchnotes/wwdc21-whats-new-in-swift</loc>
 				<changefreq>monthly</changefreq>
 				<priority>0.5</priority>
