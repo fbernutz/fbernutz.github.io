@@ -6,8 +6,7 @@
 				<link rel="canonical" href="https://fbernutz.github.io/posts/github-actions"/>
 				<meta name="twitter:url" content="https://fbernutz.github.io/posts/github-actions"/>
 				<meta name="og:url" content="https://fbernutz.github.io/posts/github-actions"/>
-				<title>
-Migration from Travis CI to GitHub Actions | #DieHimmels&shy;traeumerin</title>
+				<title>Migration from Travis CI to GitHub Actions | #DieHimmels&shy;traeumerin</title>
 				<meta name="twitter:title" content="Migration from Travis CI to GitHub Actions | #DieHimmels&shy;traeumerin"/>
 				<meta name="og:title" content="Migration from Travis CI to GitHub Actions | #DieHimmels&shy;traeumerin"/>
 				<meta name="description" content="The last days, I migrated some of my open source repositories from Travis CI to GitHub Actions. I only used Travis for running tests or linter, nothing too complicated."/>
@@ -20,27 +19,23 @@ Migration from Travis CI to GitHub Actions | #DieHimmels&shy;traeumerin</title>
 				<link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to #DieHimmels&shy;traeumerin"/>
 				<meta name="twitter:image" content="https://fbernutz.github.io/images/github-actions/preview.jpg"/>
 				<meta name="og:image" content="https://fbernutz.github.io/images/github-actions/preview.jpg"/>
+				<meta name="theme-color" content="#284081"/>
 		</head>
 		<body class="item-page">
 				<header>
 						<main class="wrapper">
-								<a class="site-name" href="/">
-#DieHimmels&shy;traeumerin</a>
-								<p>
-iOS dev • sketchnoting • accessibility • pineapple on pizza • longboarding • she/her</p>
+								<a class="site-name" href="/">#DieHimmels&shy;traeumerin</a>
+								<p>iOS dev • sketchnoting • accessibility • pineapple on pizza • longboarding • she/her</p>
 								<nav>
 										<ul>
 												<li>
-														<a class="selected" href="/posts">
-Posts</a>
+														<a class="selected" href="/posts">Posts</a>
 												</li>
 												<li>
-														<a href="/sketchnotes">
-Sketchnotes</a>
+														<a href="/sketchnotes">Sketchnotes</a>
 												</li>
 												<li>
-														<a href="/about">
-About</a>
+														<a href="/about">About</a>
 												</li>
 										</ul>
 								</nav>
@@ -49,9 +44,7 @@ About</a>
 				<main class="wrapper">
 						<article>
 								<div class="content post-detail">
-										<p class="release-date">
-Jan 12, 2020 ⋅ 4 min read</p>
-<h1>Migration from Travis CI to GitHub Actions</h1><p>The last days, I migrated some of my open source repositories from <a href="https://travis-ci.org/">Travis CI</a> to <a href="https://github.com/features/actions">GitHub Actions</a>.</p><p>I only used Travis for running tests or linter, nothing too complicated.</p><h2>Running Tests in iOS Repositories</h2><p>Most of my <code>.travis.yml</code> files looked similar to the code snippet below. I want to run two commands in the CI (with fastlane):</p><ul><li><code>bundle exec fastlane test</code></li><li><code>bundle exec fastlane snapshot_test</code></li></ul><pre><code>language: swift
+										<p class="release-date">Jan 12, 2020 ⋅ 4 min read</p><h1>Migration from Travis CI to GitHub Actions</h1><p>The last days, I migrated some of my open source repositories from <a href="https://travis-ci.org/">Travis CI</a> to <a href="https://github.com/features/actions">GitHub Actions</a>.</p><p>I only used Travis for running tests or linter, nothing too complicated.</p><h2>Running Tests in iOS Repositories</h2><p>Most of my <code>.travis.yml</code> files looked similar to the code snippet below. I want to run two commands in the CI (with fastlane):</p><ul><li><code>bundle exec fastlane test</code></li><li><code>bundle exec fastlane snapshot_test</code></li></ul><pre><code>language: swift
 osx_image: xcode11.<span class="number">2</span>
 cache:
   - bundler
@@ -121,51 +114,34 @@ pull_request:
 </code></pre><p>Found in the <a href="https://github.community/t5/GitHub-Actions/Selecting-an-Xcode-version/m-p/32340#M1092">GitHub Community Forum</a></p><h3>Pin macOS version</h3><p>Currently, it's only possible to use the <code>macos_latest</code> tag to specify that you need a Mac to run your jobs. The tag currently specifies to use <code>macOS 10.15</code>. When you have to use another macOS version, it's not possible to specify an explicit version. But maybe the solution for this is to use <a href="https://help.github.com/en/actions/automating-your-workflow-with-github-actions/about-self-hosted-runners">self-hosted runners</a> which sounds interesting, but also a bit overhead for these simple tasks which I need the CI for.</p><hr><p>Migrations from repositories:</p><ul><li><a href="https://github.com/spacepandas/cineaste-ios/pull/131">PR – Cineaste App (iOS)</a></li><li><a href="https://github.com/fbernutz/mood-tracker-android/pull/2">PR – Mood Tracker (Android)</a></li><li><a href="https://github.com/criticalmaps/criticalmaps-ios/pull/219">PR – CriticalMaps (iOS)</a></li></ul>
 								</div>
 								<div class="tags">
-										<span>
-Tagged with: </span>
+										<span>Tagged with: </span>
 										<ul class="tag-list">
 												<li class="tag">
-														<a href="/tags/githubactions">
-github-actions</a>
+														<a href="/tags/githubactions">github-actions</a>
 												</li>
 												<li class="tag">
-														<a href="/tags/opensource">
-open-source</a>
+														<a href="/tags/opensource">open-source</a>
 												</li>
 												<li class="tag">
-														<a href="/tags/ci">
-CI</a>
+														<a href="/tags/ci">CI</a>
 												</li>
 												<li class="tag">
-														<a href="/tags/ios">
-iOS</a>
+														<a href="/tags/ios">iOS</a>
 												</li>
 										</ul>
 								</div>
 						</article>
 				</main>
 				<footer>
-						<p>
-Made by Felizia Bernutz using 
-								<a href="https://github.com/johnsundell/publish" target="_blank" rel="noreferrer">
-Publish</a>
-. This site is 
-								<a href="https://github.com/fbernutz/die-himmelstraeumerin-blog" target="_blank" rel="noreferrer">
-open source</a>
-.
+						<p>Made by Felizia Bernutz using 
+								<a href="https://github.com/johnsundell/publish" target="_blank" rel="noreferrer">Publish</a>. This site is 
+								<a href="https://github.com/fbernutz/die-himmelstraeumerin-blog" target="_blank" rel="noreferrer">open source</a>.
 						</p>
 						<p>
-								<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">
-Twitter</a>
- | 
-								<a href="https://github.com/fbernutz" target="_blank" rel="noreferrer">
-GitHub</a>
- | 
-								<a href="https://fbernutz.github.io/feed.rss">
-RSS Feed</a>
- | 
-								<a href="https://www.instagram.com/diehimmelstraeumerin/" target="_blank" rel="noreferrer">
-Instagram</a>
+								<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">Twitter</a> | 
+								<a href="https://github.com/fbernutz" target="_blank" rel="noreferrer">GitHub</a> | 
+								<a href="https://fbernutz.github.io/feed.rss">RSS Feed</a> | 
+								<a href="https://www.instagram.com/diehimmelstraeumerin/" target="_blank" rel="noreferrer">Instagram</a>
 						</p>
 				</footer>
 		</body>
