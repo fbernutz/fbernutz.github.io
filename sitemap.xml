@@ -1051,6 +1051,12 @@
 				<lastmod>2022-06-17</lastmod>
 		</url>
 		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwdc22-whats-new-in-swift</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2022-06-17</lastmod>
+		</url>
+		<url>
 				<loc>https://fbernutz.github.io/sketchnotes/wwdc22-whats-new-in-uikit</loc>
 				<changefreq>monthly</changefreq>
 				<priority>0.5</priority>
