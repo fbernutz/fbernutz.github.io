@@ -871,6 +871,30 @@
 				<lastmod>2022-08-06</lastmod>
 		</url>
 		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwcode22-art-of-mobile-interview</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2022-08-06</lastmod>
+		</url>
+		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwcode22-growing-together</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2022-08-06</lastmod>
+		</url>
+		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwcode22-integrate-swiftui-into-uikit-app</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2022-08-06</lastmod>
+		</url>
+		<url>
+				<loc>https://fbernutz.github.io/sketchnotes/wwcode22-lightning-talks</loc>
+				<changefreq>monthly</changefreq>
+				<priority>0.5</priority>
+				<lastmod>2022-08-06</lastmod>
+		</url>
+		<url>
 				<loc>https://fbernutz.github.io/sketchnotes/wwdc16-in-app-purchases-with-swift3</loc>
 				<changefreq>monthly</changefreq>
 				<priority>0.5</priority>
