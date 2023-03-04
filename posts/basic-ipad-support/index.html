@@ -42,9 +42,10 @@
 						</div>
 				</header>
 				<main class="wrapper">
-						<article>
-								<div class="content post-detail">
-										<p class="release-date">Feb 14, 2021 ⋅ 9 min read</p><h1>How I Added Basic iPad Support to my iPhone Only App</h1><p>I have a confession to make. It's really sad, but true. In my career as an iOS developer, I've only ever build iPhone apps. iPads were never meant to be supported. Well... all apps "worked" in theory! Sort of.</p><figure>
+						<section>
+								<article>
+										<div class="content post-detail">
+												<p class="release-date">Feb 14, 2021 ⋅ 9 min read</p><h1>How I Added Basic iPad Support to my iPhone Only App</h1><p>I have a confession to make. It's really sad, but true. In my career as an iOS developer, I've only ever build iPhone apps. iPads were never meant to be supported. Well... all apps "worked" in theory! Sort of.</p><figure>
     <img src="../../images/basic-ipad-support/scaled.png" alt="Screenshot of scaled app on iPad" />
     <figcaption>A "beautifully" scaled iPhone app on iPad.</figcaption>
 </figure><p>So, during my vacation in December, <strong>it was finally time to start working on the two-plus years old ticket</strong> to add iPad and iPhone landscape support for <a href="https://github.com/spacepandas/cineaste-ios">Cineaste App</a>.</p><p>I gave myself a Christmas present and finished the feature on Christmas Eve (see the <a href="https://github.com/spacepandas/cineaste-ios/pull/160">final PR on GitHub</a>). The current version is <a href="https://testflight.apple.com/join/sAfD3j8m">available for testing on Testflight</a>.</p><p><strong>Feel free to test the app and send feedback!</strong> I would really appreciate it. 🙌</p><p>So, what did I do to add basic iPad and landscape support?</p><h2>1) Activate that Checkmark!</h2><p>The first important step is to <strong>activate that checkmark for iPad</strong> support. You can find that setting in Xcode under the settings of your main target under the tab "General" and the section "Deployment Info".</p><figure>
@@ -92,22 +93,23 @@ actionSheet.<span class="property">popoverPresentationController</span>?.<span c
     <img src="../../images/basic-ipad-support/readable-width.png" alt="Screenshots of the movie detail before and after. On the before screenshot, the movie information have a width of the full screen. On the after screenshot, the movie information have a maximum of 130 characters per line, so it's easier to read a longer text." />
     <figcaption>On the left movie detail with full width text (before) and on the right the text with a nice readable width (after).</figcaption>
 </figure><p>For more information about that, read <a href="https://useyourloaf.com/blog/readable-content-guides/">"Readable Content Guides"</a> at Use Your Loaf. Even though it's a post from 2016, it's still relevant. 📚</p><p>I think with all these changes, the iPad version looks ~1000% better than before. But there are still some things which I may want to change in the future.</p><h2>What's missing?</h2><p>I loved the <a href="https://medium.com/lookup-design/designed-for-ipad-a77f05c4919a">article "Designed for iPad"</a> by <a href="https://twitter.com/viditb">@viditb</a> which helped me a lot to identify what I'm still missing. 📚</p><p>The currently missing features are:</p><ul><li>Keyboard Support (maybe use <a href="https://github.com/douglashill/KeyboardKit">KeyboardKit</a> for that?)</li><li>Multi Window Support (but I'm not sure if this is really relevant for this app)</li><li>Drag and Drop Support (but I'm not sure if this is really relevant for this app)</li><li>Improved Layout for iPad (the movie lists still don't use the optimal layout, a better idea would be to use a split layout with <code>UISplitViewController</code>, a Grid Layout with a <code>UICollectionView</code>, or at least make use of a side bar to use the space on larger devices more efficient)</li></ul><h2>Conclusion</h2><p>Adding support for iPad adds <em>a lot of complexity</em> to your app. You have to test so much more! There are many more different devices now, there is the split screen layout, you have to test rotating the devices, and and and...</p><p>But I really enjoyed it and it's worth it!</p><img src="../../images/basic-ipad-support/preview.jpg" alt="An iPad on a table with Cineaste App on screen. It shows a movie detail of the movie Weathering With You." /><p>I had such respect for this task, but in retrospect it was not <em>that</em> difficult in my case. (This impression may vary, of course, depending on what your app does.) Just try it and improve it step by step. It doesn't have to be perfect right away.</p><hr><p>This was my first experiment with iPad support. Please get in touch on <a href="https://twitter.com/felibe444">Twitter</a> and tell me what I might have missed or what I can improve.</p>
-								</div>
-								<div class="tags">
-										<span>Tagged with: </span>
-										<ul class="tag-list">
-												<li class="tag">
-														<a href="/tags/ios">iOS</a>
-												</li>
-												<li class="tag">
-														<a href="/tags/ipados">iPadOS</a>
-												</li>
-												<li class="tag">
-														<a href="/tags/ipad">iPad</a>
-												</li>
-										</ul>
-								</div>
-						</article>
+										</div>
+										<div class="tags">
+												<span>Tagged with: </span>
+												<ul class="tag-list">
+														<li class="tag">
+																<a href="/tags/ios">iOS</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/ipados">iPadOS</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/ipad">iPad</a>
+														</li>
+												</ul>
+										</div>
+								</article>
+						</section>
 				</main>
 				<footer>
 						<p>Made by Felizia Bernutz using 
