@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8"/>
+				<meta name="og:site_name" content="#DieHimmelstraeumerin"/>
+				<link rel="canonical" href="https://fbernutz.github.io/sketchnotes/wwdc23-perform-accessibility-audits"/>
+				<meta name="twitter:url" content="https://fbernutz.github.io/sketchnotes/wwdc23-perform-accessibility-audits"/>
+				<meta name="og:url" content="https://fbernutz.github.io/sketchnotes/wwdc23-perform-accessibility-audits"/>
+				<title>WWDC 2023: Perform accessibility audits for your app | #DieHimmelstraeumerin</title>
+				<meta name="twitter:title" content="WWDC 2023: Perform accessibility audits for your app | #DieHimmelstraeumerin"/>
+				<meta name="og:title" content="WWDC 2023: Perform accessibility audits for your app | #DieHimmelstraeumerin"/>
+				<meta name="description" content="Sketchnote of WWDC 2023 talk about how to perform accessibility audits for your app."/>
+				<meta name="twitter:description" content="Sketchnote of WWDC 2023 talk about how to perform accessibility audits for your app."/>
+				<meta name="og:description" content="Sketchnote of WWDC 2023 talk about how to perform accessibility audits for your app."/>
+				<meta name="twitter:card" content="summary_large_image"/>
+				<link rel="stylesheet" href="/styles.css" type="text/css"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<link rel="shortcut icon" href="/images/favicon.png" type="image/png"/>
+				<link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to #DieHimmelstraeumerin"/>
+				<meta name="twitter:image" content="https://fbernutz.github.io/images/sketchnotes/wwdc23-perform-accessibility-audits-small.jpg"/>
+				<meta name="og:image" content="https://fbernutz.github.io/images/sketchnotes/wwdc23-perform-accessibility-audits-small.jpg"/>
+				<meta name="theme-color" content="#284081"/>
+		</head>
+		<body class="item-page">
+				<header>
+						<a class="skip-to-content-link" href="#main">Skip to main content</a>
+						<div class="wrapper">
+								<a class="site-name" href="/">#DieHimmels&shy;traeumerin</a>
+								<p>iOS dev • sketchnoting • accessibility • pineapple on pizza • sports • she/her</p>
+								<nav>
+										<ul>
+												<li>
+														<a href="/posts">Posts</a>
+												</li>
+												<li>
+														<a class="selected" href="/sketchnotes">Sketchnotes</a>
+												</li>
+												<li>
+														<a href="/about">About</a>
+												</li>
+										</ul>
+								</nav>
+						</div>
+				</header>
+				<main class="wrapper" id="main">
+						<section>
+								<article>
+										<div class="content sketchnote-detail">
+												<h1>WWDC 2023: Perform accessibility audits for your app</h1>
+												<div class="metadata">
+														<p>Content by Bhavya Garg</p>
+														<p>Sketch by
+																<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">@felibe444</a>
+														</p>
+														<p>Created on Jun 7, 2023</p>
+												</div>
+												<p class="sketchnote-detail-image">
+														<a href="/images/sketchnotes/wwdc23-perform-accessibility-audits.jpg" target="_blank">
+																<img src="/images/sketchnotes/wwdc23-perform-accessibility-audits.jpg" alt="Sketchnote of WWDC 2023 talk about how to perform accessibility audits for your app."/>
+														</a>
+												</p><p>Watch <a href="https://developer.apple.com/videos/play/wwdc2023/10035">Session #10035</a> for more details.</p><h2 id=	"detailed-image-description-of-the-sketchnote">Detailed image description of the sketchnote</h2><ul><li>High quality means the app is accessible for everyone!</li><li>Write tests to catch bugs before they are shipped</li></ul><h3 id=	"accessibility-inspector">Accessibility Inspector</h3><ul><li>find</li><li>diagnose</li><li>fix accessibility issues</li><li>perform manual audits for views</li></ul><p>Now this is automatable.</p><pre><code class="language-swift">func testAccessibility() throws {
+    let app = XCUlApplication()
+    app.launch()
+    try app.performAccessibilityAudit()
+}
+</code></pre><h3 id=	"new-audit-api">New Audit API</h3><ul><li>Option to filter issues that are false-positive</li><li>Option to test specific categories, like Dynamic Type, Contrast and more</li></ul><h3 id=	"new-api">New API</h3><ul><li><code>.automationElements</code> to make elements accessible in UITests</li></ul>
+										</div>
+										<div class="tags">
+												<span>Tagged with: </span>
+												<ul class="tag-list">
+														<li class="tag">
+																<a href="/tags/apple">apple</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/wwdc">wwdc</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/wwdc23">wwdc-23</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/ios">iOS</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/onlineconference">online-conference</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/swift">swift</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/accessibility">accessibility</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/testing">testing</a>
+														</li>
+												</ul>
+										</div>
+								</article>
+						</section>
+				</main>
+				<footer>
+						<p>Made by Felizia Bernutz using 
+								<a href="https://github.com/johnsundell/publish" target="_blank" rel="noreferrer">Publish</a>. This site is 
+								<a href="https://github.com/fbernutz/die-himmelstraeumerin-blog" target="_blank" rel="noreferrer">open source</a>.
+						</p>
+						<p>
+								<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">Twitter 🐦</a> | 
+								<a href="https://iosdev.space/@feli" target="_blank" rel="me noreferrer">Mastodon 🐘</a> | 
+								<a href="https://github.com/fbernutz" target="_blank" rel="noreferrer">GitHub 👩‍💻</a> | 
+								<a href="https://www.instagram.com/diehimmelstraeumerin/" target="_blank" rel="noreferrer">Instagram (🔒)</a> | 
+								<a href="https://www.buymeacoffee.com/felibe444" target="_blank" rel="noreferrer">Buy me a hot chocolate ☕️</a> | 
+								<a href="https://fbernutz.github.io/feed.rss">RSS Feed 🗞</a>
+						</p>
+				</footer>
+		</body>
+</html>
