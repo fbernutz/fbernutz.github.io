@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+				<meta charset="UTF-8"/>
+				<meta name="og:site_name" content="#DieHimmelstraeumerin"/>
+				<link rel="canonical" href="https://fbernutz.github.io/sketchnotes/nsspain23-swiftui-animations"/>
+				<meta name="twitter:url" content="https://fbernutz.github.io/sketchnotes/nsspain23-swiftui-animations"/>
+				<meta name="og:url" content="https://fbernutz.github.io/sketchnotes/nsspain23-swiftui-animations"/>
+				<title>NSSpain 2023: SwiftUI animations - Chef's Secrets (workshop) | #DieHimmelstraeumerin</title>
+				<meta name="twitter:title" content="NSSpain 2023: SwiftUI animations - Chef's Secrets (workshop) | #DieHimmelstraeumerin"/>
+				<meta name="og:title" content="NSSpain 2023: SwiftUI animations - Chef's Secrets (workshop) | #DieHimmelstraeumerin"/>
+				<meta name="description" content="Sketchnote of SwiftUI animation workshop by Pavel at NSSpain 2023"/>
+				<meta name="twitter:description" content="Sketchnote of SwiftUI animation workshop by Pavel at NSSpain 2023"/>
+				<meta name="og:description" content="Sketchnote of SwiftUI animation workshop by Pavel at NSSpain 2023"/>
+				<meta name="twitter:card" content="summary_large_image"/>
+				<link rel="stylesheet" href="/styles.css" type="text/css"/>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+				<link rel="shortcut icon" href="/images/favicon.png" type="image/png"/>
+				<link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to #DieHimmelstraeumerin"/>
+				<meta name="twitter:image" content="https://fbernutz.github.io/images/sketchnotes/nsspain23-swiftui-animations-small.jpg"/>
+				<meta name="og:image" content="https://fbernutz.github.io/images/sketchnotes/nsspain23-swiftui-animations-small.jpg"/>
+				<meta name="theme-color" content="#284081"/>
+		</head>
+		<body class="item-page">
+				<header>
+						<a class="skip-to-content-link" href="#main">Skip to main content</a>
+						<div class="wrapper">
+								<a class="site-name" href="/">#DieHimmels&shy;traeumerin</a>
+								<p>iOS dev • sketchnoting • accessibility • pineapple on pizza • sports • she/her</p>
+								<nav>
+										<ul>
+												<li>
+														<a href="/posts">Posts</a>
+												</li>
+												<li>
+														<a class="selected" href="/sketchnotes">Sketchnotes</a>
+												</li>
+												<li>
+														<a href="/about">About</a>
+												</li>
+										</ul>
+								</nav>
+						</div>
+				</header>
+				<main class="wrapper" id="main">
+						<section>
+								<article>
+										<div class="content sketchnote-detail">
+												<h1>NSSpain 2023: SwiftUI animations - Chef's Secrets (workshop)</h1>
+												<div class="metadata">
+														<p>Content by
+																<a href="https://twitter.com/myridiphis" target="_blank" rel="noreferrer">Pavel Zak</a>
+														</p>
+														<p>Sketch by
+																<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">@felibe444</a>
+														</p>
+														<p>Created on Sep 13, 2023</p>
+												</div>
+												<p class="sketchnote-detail-image">
+														<a href="/images/sketchnotes/nsspain23-swiftui-animations.jpg" target="_blank">
+																<img src="/images/sketchnotes/nsspain23-swiftui-animations.jpg" alt="Sketchnote of SwiftUI animation workshop by Pavel at NSSpain 2023"/>
+														</a>
+												</p><h2 id=	"detailed-image-description-of-the-sketchnote">Detailed image description of the sketchnote</h2><h3 id=	"move-objects">Move Objects</h3><pre><code class="language-swift">onTapGesture {
+    withAnimation(.) {
+        self.moveBall()
+    }
+}
+</code></pre><p>vs</p><pre><code class="language-swift">BallView()
+    .animation
+</code></pre><ul><li>The second example will run every time the view is rendered</li><li><code>Animatable</code> protocol magic</li><li><code>AnimatablePair(A, B)</code> can also nest pairs</li></ul><h3 id=	"vectors">Vectors</h3><ul><li><code>AnimatableVector: Vector Arithmetic {}</code></li><li>Interpolation is the magic!</li></ul><h3 id=	"non-linear-motion">Non linear motion</h3><ul><li>Normalize valves to make visualization easier (0..1)</li><li><code>.repeatForever</code>`</li></ul><h3 id=	"shapes">Shapes</h3><ul><li>Example: Gummy slider or Water tank</li><li>Override path functions</li><li>Always a rectangle but draw the orange bubble</li></ul><h3 id=	"morphing">Morphing</h3><ul><li>But remember your starting points of each shape</li><li>The more points you have, the smoother it ho rocket will look</li><li>No rocket science, only 86 lines of code</li></ul><h3 id=	"view-modifier">View Modifier</h3><ul><li>Particle Effect</li></ul><h3 id=	"whipping">Whipping</h3><ul><li>Example: Hamburger to close button</li><li><code>delay(...)</code> for effects of more natural motion (only use it with purpose)</li><li>Use blur and blend Modes for making animations</li><li>Reuse modifier on muttiple views</li><li>Watch out for performance!</li><li>Use sane number of views</li></ul><h3 id=	"new-in-ios17">New In iOS17</h3><ul><li>Add completion to animation</li><li>New phase animator</li></ul>
+										</div>
+										<div class="tags">
+												<span>Tagged with: </span>
+												<ul class="tag-list">
+														<li class="tag">
+																<a href="/tags/nsspain">nsspain</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/nsspain23">nsspain-23</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/ios">iOS</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/swiftui">swiftui</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/animations">animations</a>
+														</li>
+												</ul>
+										</div>
+								</article>
+						</section>
+				</main>
+				<footer>
+						<p>Made by Felizia Bernutz using 
+								<a href="https://github.com/johnsundell/publish" target="_blank" rel="noreferrer">Publish</a>. This site is 
+								<a href="https://github.com/fbernutz/die-himmelstraeumerin-blog" target="_blank" rel="noreferrer">open source</a>.
+						</p>
+						<p>
+								<a href="https://twitter.com/felibe444" target="_blank" rel="noreferrer">Twitter 🐦</a> | 
+								<a href="https://iosdev.space/@feli" target="_blank" rel="me noreferrer">Mastodon 🐘</a> | 
+								<a href="https://github.com/fbernutz" target="_blank" rel="noreferrer">GitHub 👩‍💻</a> | 
+								<a href="https://www.instagram.com/diehimmelstraeumerin/" target="_blank" rel="noreferrer">Instagram (🔒)</a> | 
+								<a href="https://www.buymeacoffee.com/felibe444" target="_blank" rel="noreferrer">Buy me a hot chocolate ☕️</a> | 
+								<a href="https://fbernutz.github.io/feed.rss">RSS Feed 🗞</a>
+						</p>
+				</footer>
+		</body>
+</html>
