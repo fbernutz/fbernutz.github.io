@@ -3,22 +3,22 @@
 		<head>
 				<meta charset="UTF-8"/>
 				<meta property="og:site_name" content="#DieHimmelstraeumerin"/>
-				<link rel="canonical" href="https://fbernutz.github.io/sketchnotes/swiftconf-23-keeping-swift-apps-smaller"/>
-				<meta name="twitter:url" content="https://fbernutz.github.io/sketchnotes/swiftconf-23-keeping-swift-apps-smaller"/>
-				<meta property="og:url" content="https://fbernutz.github.io/sketchnotes/swiftconf-23-keeping-swift-apps-smaller"/>
-				<title>Swift Conf 2023: Keeping Swift Apps small | #DieHimmelstraeumerin</title>
-				<meta name="twitter:title" content="Swift Conf 2023: Keeping Swift Apps small | #DieHimmelstraeumerin"/>
-				<meta property="og:title" content="Swift Conf 2023: Keeping Swift Apps small | #DieHimmelstraeumerin"/>
-				<meta name="description" content="Sketchnote about how to keep Swift apps small from Swift Conf 2023"/>
-				<meta name="twitter:description" content="Sketchnote about how to keep Swift apps small from Swift Conf 2023"/>
-				<meta property="og:description" content="Sketchnote about how to keep Swift apps small from Swift Conf 2023"/>
+				<link rel="canonical" href="https://fbernutz.github.io/sketchnotes/swiftleeds25-side-effects-as-behavior"/>
+				<meta name="twitter:url" content="https://fbernutz.github.io/sketchnotes/swiftleeds25-side-effects-as-behavior"/>
+				<meta property="og:url" content="https://fbernutz.github.io/sketchnotes/swiftleeds25-side-effects-as-behavior"/>
+				<title>Side Effects as Behavior | #DieHimmelstraeumerin</title>
+				<meta name="twitter:title" content="Side Effects as Behavior | #DieHimmelstraeumerin"/>
+				<meta property="og:title" content="Side Effects as Behavior | #DieHimmelstraeumerin"/>
+				<meta name="description" content="Sketchnote titled "Side Effects as Behavior" by Kim Gyuri, discussing logging in programming. It includes concepts like logging propagation pain, the importance of capturing context, and the structure of logging architectures."/>
+				<meta name="twitter:description" content="Sketchnote titled "Side Effects as Behavior" by Kim Gyuri, discussing logging in programming. It includes concepts like logging propagation pain, the importance of capturing context, and the structure of logging architectures."/>
+				<meta property="og:description" content="Sketchnote titled "Side Effects as Behavior" by Kim Gyuri, discussing logging in programming. It includes concepts like logging propagation pain, the importance of capturing context, and the structure of logging architectures."/>
 				<meta name="twitter:card" content="summary_large_image"/>
 				<link rel="stylesheet" href="/styles.css" type="text/css"/>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<link rel="shortcut icon" href="/images/favicon.png" type="image/png"/>
 				<link rel="alternate" href="/feed.rss" type="application/rss+xml" title="Subscribe to #DieHimmelstraeumerin"/>
-				<meta name="twitter:image" content="https://fbernutz.github.io/images/sketchnotes/swiftconf-23-keeping-swift-apps-smaller-small.jpg"/>
-				<meta property="og:image" content="https://fbernutz.github.io/images/sketchnotes/swiftconf-23-keeping-swift-apps-smaller-small.jpg"/>
+				<meta name="twitter:image" content="https://fbernutz.github.io/images/sketchnotes/swiftleeds25-side-effects-as-behavior-small.jpg"/>
+				<meta property="og:image" content="https://fbernutz.github.io/images/sketchnotes/swiftleeds25-side-effects-as-behavior-small.jpg"/>
 				<meta name="theme-color" content="#284081"/>
 		</head>
 		<body class="item-page">
@@ -49,33 +49,40 @@
 						<section>
 								<article>
 										<div class="content sketchnote-detail">
-												<h1>Swift Conf 2023: Keeping Swift Apps small</h1>
+												<h1>Side Effects as Behavior</h1>
 												<div class="metadata">
-														<p>Content by
-																<a href="https://twitter.com/rockbruno_" target="_blank" rel="noreferrer">Bruno Rocha</a>
-														</p>
+														<p>Content by Kim Gyuri</p>
 														<p>Sketch by
 																<a href="https://bsky.app/profile/felibe444.bsky.social" target="_blank" rel="noreferrer">@felibe444</a>
 														</p>
-														<p>Created on Mar 15, 2024</p>
+														<p>Created on Oct 8, 2025</p>
 												</div>
 												<p class="sketchnote-detail-image">
-														<a href="/images/sketchnotes/swiftconf-23-keeping-swift-apps-smaller.jpg" target="_blank">
-																<img src="/images/sketchnotes/swiftconf-23-keeping-swift-apps-smaller.jpg" alt="Sketchnote about how to keep Swift apps small from Swift Conf 2023"/>
+														<a href="/images/sketchnotes/swiftleeds25-side-effects-as-behavior.jpg" target="_blank">
+																<img src="/images/sketchnotes/swiftleeds25-side-effects-as-behavior.jpg" alt="Sketchnote titled "Side Effects as Behavior" by Kim Gyuri, discussing logging in programming. It includes concepts like logging propagation pain, the importance of capturing context, and the structure of logging architectures."/>
 														</a>
-												</p><h2 id=	"1.-why-do-we-care?">1. Why do we care?</h2><ul><li>In the 90s: high optimizations</li><li>Today: great experiences! But really?</li><li>Developed vs emerging markets</li><li>85% of the population care about app size</li><li>Install size != download size</li></ul><h2 id=	"2.-how-do-we-track-it?">2. How do we track it?</h2><ul><li>App Size CI Checks like Emerge give you the power to block changes like + 12.4 MB</li><li>Policies &amp; Guidelines</li></ul><h2 id=	"3.-how-do-we-improve-it?">3. How do we improve it?</h2><ul><li>Delete everything hehe</li></ul><p>Resources:</p><ul><li>SVG for small icons</li><li>HEIC for the rest</li><li>Minimize JSON</li><li>Audio CAF + AAC</li><li>Use Asset Catalog</li></ul><p>Swift:</p><ul><li>Improper usage of Structs, like nesting types is expensive, reference types in structs, mutability in Structs</li><li>Unused code: unnecessary dynamic dispatch, only add protocols to structs if needed</li></ul><ul><li>Start Simple</li></ul>
+												</p><h2 id=	"detailed-image-description-of-the-sketchnote">Detailed image description of the sketchnote</h2><ul><li>Side Effects as Behavior or what plastic surgery and coding have in common</li><li>Logging propagation pain</li><li>Capture context with structure</li><li>Post-it’s don’t make a diary -&gt; Logging needs own architecture, separate to UI + business logic</li><li>Swift Actors: testable, centralized, shared state, concurrency for ownership</li><li>Idea: actors as side effect managers</li></ul>
 										</div>
 										<div class="tags">
 												<span>Tagged with: </span>
 												<ul class="tag-list">
 														<li class="tag">
-																<a href="/tags/ios">iOS</a>
+																<a href="/tags/swiftleeds">swiftleeds</a>
 														</li>
 														<li class="tag">
-																<a href="/tags/appsize">app-size</a>
+																<a href="/tags/swiftleeds25">swiftleeds-25</a>
 														</li>
 														<li class="tag">
 																<a href="/tags/swift">swift</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/logging">logging</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/architecture">architecture</a>
+														</li>
+														<li class="tag">
+																<a href="/tags/conference">conference</a>
 														</li>
 												</ul>
 										</div>
